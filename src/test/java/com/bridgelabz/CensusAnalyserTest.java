@@ -3,8 +3,6 @@ package com.bridgelabz;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class CensusAnalyserTest {
     private String INDIAN_CENSUS_CSV_FILE_PATH = "C:\\Users\\ULLASKUMAR K\\Desktop\\CensusData.csv";
 
@@ -13,7 +11,7 @@ class CensusAnalyserTest {
      * This is a Happy Test Case where the record are checked
      */
     @Test
-    public void givenIndianCensusCSVFile_WhenLoad_ShouldReturnCorrectRecords() throws CensusAnalyzerException {
+    public void givenIndianCensusCSVFile_WhenLoad_ShouldReturnCorrectRecordsHappyTest() throws CensusAnalyzerException {
         CensusAnalyser censusAnalyser = new CensusAnalyser();
         int count = censusAnalyser.loadIndiaCensusData(INDIAN_CENSUS_CSV_FILE_PATH);
         Assertions.assertEquals(10, count);
