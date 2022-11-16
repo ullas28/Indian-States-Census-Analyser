@@ -79,4 +79,13 @@ class CensusAnalyserTest {
         });
         Assertions.assertEquals(CENSUS_FILE_PROBLEM, exceptionRule.type);
     }
+
+    @Test
+    public void givenIndianStateCodeCSVFile_WhenCorrectPathButWrongFileFormat_ShouldThrowException(){
+        CensusAnalyser censusAnalyser = new CensusAnalyser();
+        CensusAnalyzerException exceptionRule = Assertions.assertThrows(CensusAnalyzerException.class,()->{
+            censusAnalyser.loadIndianStateCode(STATE_CODE_INCORRECT_FILE_FORMAT);
+        });
+        Assertions.assertEquals(CENSUS_INCORRECT_FILE_FORMAT, exceptionRule.type);
+    }
 }

@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1e8dc23-f7b2-4dc4-baaa-39908b5571e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/CensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/CensusAnalyser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/CensusAnalyserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/CensusAnalyserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/CensusAnalyserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/CensusAnalyserTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +52,7 @@
       <recent name="com.bridgelabz" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CensusAnalyserTest">
+  <component name="RunManager" selected="JUnit.CensusAnalyserTest.givenIndianStateCodeCSVFile_WhenCorrectPathButWrongFileFormat_ShouldThrowException">
     <configuration name="CensusAnalyserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Indian States Census Analyser" />
       <extension name="coverage">
@@ -137,9 +134,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CensusAnalyserTest.givenIndianStateCodeCSVFile_WhenCorrectPathButWrongFileFormat_ShouldThrowException" />
         <item itemvalue="JUnit.CensusAnalyserTest" />
         <item itemvalue="JUnit.CensusAnalyserTest.givenIndianStateCSVFile_WhenCustomDelimiter_ShouldThrowException" />
-        <item itemvalue="JUnit.CensusAnalyserTest.givenIndianStateCodeCSVFile_WhenCorrectPathButWrongFileFormat_ShouldThrowException" />
         <item itemvalue="JUnit.CensusAnalyserTest.givenIndianStateCodeCSVFile_WhenWithWrongFilePath_ShouldThrowException" />
         <item itemvalue="JUnit.CensusAnalyserTest.givenIndiaStateCodeCSVFile_WhenCorrectPath_ShouldReturnsCorrectRecords" />
       </list>
