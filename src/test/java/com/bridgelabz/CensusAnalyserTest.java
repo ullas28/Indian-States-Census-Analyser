@@ -88,4 +88,13 @@ class CensusAnalyserTest {
         });
         Assertions.assertEquals(CENSUS_INCORRECT_FILE_FORMAT, exceptionRule.type);
     }
+
+    @Test
+    public void givenIndianStateCSVFile_WhenCustomDelimiter_ShouldThrowException(){
+        CensusAnalyser censusAnalyser = new CensusAnalyser();
+        CensusAnalyzerException exceptionRule = Assertions.assertThrows(CensusAnalyzerException.class,()->{
+            censusAnalyser.loadIndianStateCode(CSV_WITH_WRONG_DELIMITER);
+        });
+        Assertions.assertEquals(CENSUS_WRONG_DELIMITER_OR_WRONG_HEADER, exceptionRule.type);
+    }
 }
