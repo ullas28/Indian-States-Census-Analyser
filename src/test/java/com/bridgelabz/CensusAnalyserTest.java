@@ -17,7 +17,7 @@ class CensusAnalyserTest {
     private static final String WRONG_STATE_CODE_CSV_PATH = "./src/main/resources/IndiaStateCode.csv";
     private static final String STATE_CODE_INCORRECT_FILE_FORMAT = "C:\\Users\\ULLASKUMAR K\\Desktop\\Prophecy.txt";
     private static final String STATE_CODES_WITH_WRONG_DELIMITER = "C:\\Users\\ULLASKUMAR K\\Desktop\\IncorrectStatecodee.csv";
-    private static final String STATE_CODES_WITH_INCORRECT_HEADER = "./src/test/resources/IndiaStateCodeIncorrectHeader.csv";
+    private static final String STATE_CODES_WITH_INCORRECT_HEADER = "C:\\Users\\ULLASKUMAR K\\Desktop\\IncorrectStatecodee.csv";
 
     @Test
     public void givenIndianCensusCSVFile_WhenLoad_ShouldReturnCorrectRecordsHappyTest() throws CensusAnalyzerException {
@@ -81,7 +81,7 @@ class CensusAnalyserTest {
     }
 
     @Test
-    public void givenIndianStateCodeCSVFile_WhenCorrectPathButWrongFileFormat_ShouldThrowException(){
+    public void givenIndianStateCodeCSVFile_WhenCorrectPathButWrongFileFormat_ShouldThrowExceptionSadTest(){
         CensusAnalyser censusAnalyser = new CensusAnalyser();
         CensusAnalyzerException exceptionRule = Assertions.assertThrows(CensusAnalyzerException.class,()->{
             censusAnalyser.loadIndianStateCode(STATE_CODE_INCORRECT_FILE_FORMAT);
@@ -90,10 +90,19 @@ class CensusAnalyserTest {
     }
 
     @Test
-    public void givenIndianStateCSVFile_WhenCustomDelimiter_ShouldThrowException(){
+    public void givenIndianStateCSVFile_WhenCustomDelimiter_ShouldThrowExceptionSadTest(){
         CensusAnalyser censusAnalyser = new CensusAnalyser();
         CensusAnalyzerException exceptionRule = Assertions.assertThrows(CensusAnalyzerException.class,()->{
-            censusAnalyser.loadIndianStateCode(CSV_WITH_WRONG_DELIMITER);
+            censusAnalyser.loadIndianStateCode(STATE_CODES_WITH_WRONG_DELIMITER);
+        });
+        Assertions.assertEquals(CENSUS_WRONG_DELIMITER_OR_WRONG_HEADER, exceptionRule.type);
+    }
+
+    @Test
+    public void givenIndiaStateCodeCSVFile_WhenIncorrectHeader_ShouldThrowExceptionSadTest(){
+        CensusAnalyser censusAnalyser = new CensusAnalyser();
+        CensusAnalyzerException exceptionRule = Assertions.assertThrows(CensusAnalyzerException.class,()->{
+            censusAnalyser.loadIndianStateCode(STATE_CODES_WITH_INCORRECT_HEADER);
         });
         Assertions.assertEquals(CENSUS_WRONG_DELIMITER_OR_WRONG_HEADER, exceptionRule.type);
     }
