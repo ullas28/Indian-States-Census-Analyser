@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/CensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/CensusAnalyser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/CensusAnalyserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/CensusAnalyserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bridgelabz/CensusAnalyser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bridgelabz/CensusAnalyser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/CensusAnalyserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/bridgelabz/CensusAnalyserTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +55,7 @@
       <recent name="com.bridgelabz" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CensusAnalyserTest.givenIndiaStateCodeCSVFile_WhenCorrectPath_ShouldReturnsCorrectRecords">
+  <component name="RunManager" selected="JUnit.CensusAnalyserTest">
     <configuration name="CensusAnalyserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Indian States Census Analyser" />
       <extension name="coverage">
@@ -88,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CensusAnalyserTest.givenIndianCensusCSVFile_WhenCustomDelimiter_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CensusAnalyserTest.givenIndianStateCSVFile_WhenCustomDelimiter_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Indian States Census Analyser" />
       <extension name="coverage">
         <pattern>
@@ -98,13 +97,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bridgelabz" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.CensusAnalyserTest" />
-      <option name="METHOD_NAME" value="givenIndianCensusCSVFile_WhenCustomDelimiter_ShouldThrowException" />
+      <option name="METHOD_NAME" value="givenIndianStateCSVFile_WhenCustomDelimiter_ShouldThrowException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CensusAnalyserTest.givenIndianCensusCSVFile_WhenIncorrectHeader_ShouldThrowExceptionSadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CensusAnalyserTest.givenIndianStateCodeCSVFile_WhenCorrectPathButWrongFileFormat_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Indian States Census Analyser" />
       <extension name="coverage">
         <pattern>
@@ -114,13 +113,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bridgelabz" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.CensusAnalyserTest" />
-      <option name="METHOD_NAME" value="givenIndianCensusCSVFile_WhenIncorrectHeader_ShouldThrowExceptionSadTest" />
+      <option name="METHOD_NAME" value="givenIndianStateCodeCSVFile_WhenCorrectPathButWrongFileFormat_ShouldThrowException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CensusAnalyserTest.givenIndianCensusCSVFile_WhenLoad_ShouldReturnCorrectRecordsHappyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CensusAnalyserTest.givenIndianStateCodeCSVFile_WhenWithWrongFilePath_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Indian States Census Analyser" />
       <extension name="coverage">
         <pattern>
@@ -130,7 +129,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bridgelabz" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.CensusAnalyserTest" />
-      <option name="METHOD_NAME" value="givenIndianCensusCSVFile_WhenLoad_ShouldReturnCorrectRecordsHappyTest" />
+      <option name="METHOD_NAME" value="givenIndianStateCodeCSVFile_WhenWithWrongFilePath_ShouldThrowException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CensusAnalyserTest.givenIndiaStateCodeCSVFile_WhenCorrectPath_ShouldReturnsCorrectRecords" />
         <item itemvalue="JUnit.CensusAnalyserTest" />
-        <item itemvalue="JUnit.CensusAnalyserTest.givenIndianCensusCSVFile_WhenLoad_ShouldReturnCorrectRecordsHappyTest" />
-        <item itemvalue="JUnit.CensusAnalyserTest.givenIndianCensusCSVFile_WhenIncorrectHeader_ShouldThrowExceptionSadTest" />
-        <item itemvalue="JUnit.CensusAnalyserTest.givenIndianCensusCSVFile_WhenCustomDelimiter_ShouldThrowException" />
+        <item itemvalue="JUnit.CensusAnalyserTest.givenIndianStateCSVFile_WhenCustomDelimiter_ShouldThrowException" />
+        <item itemvalue="JUnit.CensusAnalyserTest.givenIndianStateCodeCSVFile_WhenCorrectPathButWrongFileFormat_ShouldThrowException" />
+        <item itemvalue="JUnit.CensusAnalyserTest.givenIndianStateCodeCSVFile_WhenWithWrongFilePath_ShouldThrowException" />
+        <item itemvalue="JUnit.CensusAnalyserTest.givenIndiaStateCodeCSVFile_WhenCorrectPath_ShouldReturnsCorrectRecords" />
       </list>
     </recent_temporary>
   </component>
